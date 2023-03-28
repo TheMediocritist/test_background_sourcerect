@@ -7,7 +7,7 @@ local input_vector = geom.vector2D.new(0, 0)
 local background = gfx.image.new('big_image')
 local bg_x, bg_y = background:getSize()
 local screen_width, screen_height = 400, 240
-local sourceRect = playdate.geometry.rect.new(bg_x/2, bg_y/2, screen_width, screen_height) -- start sourceRect near the middle of background
+local sourceRect = geom.rect.new(bg_x/2, bg_y/2, screen_width, screen_height) -- start sourceRect near the middle of background
 
 function playdate.update()
     
